@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttachTruck">
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3D5AFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Attach Your Truck Here"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4" />
+
+    <EditText
+        android:id="@+id/vehicleNameAt"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_black_bg"
+        android:ems="10"
+        android:hint="Vehicle"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/atCategory"
+        app:layout_constraintStart_toStartOf="@+id/atCategory"
+        app:layout_constraintTop_toBottomOf="@+id/atCategory" />
+
+    <EditText
+        android:id="@+id/vehicleNumberAt"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_black_bg"
+        android:ems="10"
+        android:hint="Vehicle Number"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/vehicleNameAt"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/vehicleNameAt"
+        app:layout_constraintTop_toBottomOf="@+id/vehicleNameAt" />
+
+
+    <EditText
+        android:id="@+id/Tonnage"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_black_bg"
+        android:ems="10"
+        android:hint="Tonnage"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/vehicleNumberAt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vehicleNumberAt"
+        app:layout_constraintTop_toBottomOf="@+id/vehicleNumberAt" />
+
+    <EditText
+        android:id="@+id/OwnerNo"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_black_bg"
+        android:ems="10"
+        android:hint="Owner Number"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Tonnage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Tonnage"
+        app:layout_constraintTop_toBottomOf="@+id/Tonnage" />
+
+    <RadioGroup
+        android:id="@+id/atCategory"
+        android:layout_width="325dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_black_bg"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <RadioButton
+            android:id="@+id/LCV"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Light Weight Commercial vehicle" />
+
+        <RadioButton
+            android:id="@+id/HCV"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Heavy weight Commercial vehicle" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAttachTruck"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/all_button"
+        android:text="Attach Truck"
+        app:layout_constraintEnd_toEndOf="@+id/OwnerNo"
+        app:layout_constraintStart_toStartOf="@+id/OwnerNo"
+        app:layout_constraintTop_toBottomOf="@+id/OwnerNo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

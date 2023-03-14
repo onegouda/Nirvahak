@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "121304396970",
+    "project_id": "nirvahak-bdc4a",
+    "storage_bucket": "nirvahak-bdc4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121304396970:android:b04758e9c5a832f455ccd3",
+        "android_client_info": {
+          "package_name": "com.example.nirvahak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121304396970-m34k86h92ui0alsifq4rtvc4tudc2j7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nirvahak",
+            "certificate_hash": "632019cdc61a862b35df6c930a3ae6da4d1bb13b"
+          }
+        },
+        {
+          "client_id": "121304396970-0r5oe2ir3fbvsjnreg7h74t0o7q2kk5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLPPtMUp74E8RfO2DiNlM8n0j3vSFehic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121304396970-0r5oe2ir3fbvsjnreg7h74t0o7q2kk5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driverProfile">
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:background="#3D5AFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/driverNameP"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="155dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/driverProfilePic"
+            android:layout_width="228dp"
+            android:layout_height="149dp"
+            android:layout_marginStart="80dp"
+
+            tools:srcCompat="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/driverEditPro"
+            android:layout_width="421dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_baseline_edit_24"
+
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="358dp"
+        android:layout_height="392dp"
+        android:layout_marginTop="44dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Experience : "
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/driverExperience"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:text="Fleet Name : "
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/driverFleetName"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="70dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="120dp"
+            android:text="Vehicle Number : "
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/vehicleNo"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="120dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="170dp"
+            android:text="Licence No : "
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/licenceNo"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="170dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="270dp"
+            android:text="Address : "
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/driverAddress"
+            android:layout_width="200dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="270dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="116dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="220dp"
+            android:text="vehicle  : "
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/driverVehicleType"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="220dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

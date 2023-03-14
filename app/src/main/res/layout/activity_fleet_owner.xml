@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FleetOwner"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_layout1"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/side_menu_bar" />
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3D5AFE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="675dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolBar" >
+
+            <TextView
+                android:layout_width="341dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center"
+                android:text="Choose to Navigate"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:layout_width="345dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/driverhomenav">
+
+
+                <TextView
+                    android:id="@+id/foLoadMarket"
+                    android:layout_width="235dp"
+                    android:layout_height="73dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Load Market"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    app:srcCompat="@drawable/loads"
+                    android:layout_marginTop="10dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="345dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="220dp"
+                android:background="@drawable/driverhomenav1">
+
+                <TextView
+                    android:id="@+id/foHistory"
+                    android:layout_width="299dp"
+                    android:layout_height="73dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Check Distance"
+
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="87dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/map" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="345dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="345dp"
+                android:background="@drawable/driverhomenav">
+
+
+                <TextView
+                    android:id="@+id/foMyTruck"
+                    android:layout_width="235dp"
+                    android:layout_height="73dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="My Truck"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="142dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="1dp"
+                    app:srcCompat="@drawable/truck" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="345dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="470dp"
+                android:background="@drawable/driverhomenav1">
+
+                <TextView
+                    android:id="@+id/foProfile"
+                    android:layout_width="235dp"
+                    android:layout_height="73dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Profile"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="88dp"
+                    android:layout_height="79dp"
+                    android:layout_marginStart="250dp"
+                    app:srcCompat="@drawable/profile"
+                    android:layout_marginTop="5dp"/>
+
+
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="570dp"
+                android:text="Click On text" />
+
+            <Button
+                android:id="@+id/btnLogoutF"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="600dp"
+                android:background="@drawable/all_button"
+                android:text="Logout"
+                android:textColor="@color/white"/>
+
+
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

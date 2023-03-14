@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driverAssignment"
+    android:background="@drawable/bg">
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BC000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="221dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <EditText
+        android:id="@+id/sSource"
+        android:layout_width="271dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Enter Source Place"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+
+    <EditText
+        android:id="@+id/sDestination"
+        android:layout_width="271dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:ems="10"
+        android:hint="Enter Destination Place"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sSource"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sSource"
+        app:layout_constraintTop_toBottomOf="@+id/sSource" />
+
+    <Button
+        android:id="@+id/btnLoc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Navigate"
+        android:background="@drawable/input_bg"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sDestination"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/sDestination"
+        app:layout_constraintTop_toBottomOf="@+id/sDestination" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

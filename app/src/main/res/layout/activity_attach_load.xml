@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttachLoad">
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3D5AFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="333dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/attach_your_loads_here"
+        android:textSize="25sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout4" />
+
+    <Spinner
+        android:id="@+id/LoadCategory"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+
+        />
+
+    <EditText
+        android:id="@+id/LoadSource"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_black_bg"
+        android:ems="10"
+        android:hint="Load Source"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/LoadCategory"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LoadCategory"
+        app:layout_constraintTop_toBottomOf="@+id/LoadCategory" />
+
+    <EditText
+        android:id="@+id/LoadDestination"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_black_bg"
+        android:ems="10"
+        android:hint="Load Destination"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/LoadSource"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/LoadSource"
+        app:layout_constraintTop_toBottomOf="@+id/LoadSource" />
+
+    <EditText
+        android:id="@+id/LoadTonnage"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_black_bg"
+        android:ems="10"
+        android:hint="Tonnage"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/LoadDestination"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LoadDestination"
+        app:layout_constraintTop_toBottomOf="@+id/LoadDestination" />
+
+    <EditText
+        android:id="@+id/LoadRent"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_black_bg"
+        android:ems="10"
+        android:hint="Load Transport Charge"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/LoadTonnage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LoadTonnage"
+        app:layout_constraintTop_toBottomOf="@+id/LoadTonnage" />
+
+    <EditText
+        android:id="@+id/TransporterNo"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_black_bg"
+        android:ems="10"
+        android:hint="Transporter Number"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/LoadRent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LoadRent"
+        app:layout_constraintTop_toBottomOf="@+id/LoadRent" />
+
+    <Button
+        android:id="@+id/btnAttachLoad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/all_button"
+        android:text="Attach Load"
+        app:layout_constraintEnd_toEndOf="@+id/TransporterNo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TransporterNo"
+        app:layout_constraintTop_toBottomOf="@+id/TransporterNo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

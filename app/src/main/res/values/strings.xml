@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Nirvahak</string>
+    <string name="navigation_open">open navigation</string>
+    <string name="navigation_close">close navigation</string>
+
+
+    <string-array name="LoadCategoryAl">
+        <item>Solid</item>
+        <item>Fluid</item>
+        <item>Imflameble</item>
+        <item>Flat Bed</item>
+        <item>Cold</item>
+        <item>Matel</item>
+        <item>Stone</item>
+        <item>Sand</item>
+        <item>Brick</item>
+    </string-array>
+
+    <string name="attach_your_loads_here">Attach Your Loads Here</string>
+    <string name="email">Email</string>
+    <string name="register">REGISTER</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+
+
+</resources>

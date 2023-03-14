@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="413dp"
+        android:layout_height="151dp"
+        android:background="@drawable/math_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aldrich"
+        android:text="NIRVAHAK"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="282dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="84dp"
+        android:text="B2B Transport Platform"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="341dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="200dp"
+        android:text="Who Are You ?"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/aldrich"
+        android:paddingLeft="15dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="172dp"
+        android:layout_height="245dp"
+        android:layout_marginBottom="528dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:srcCompat="@drawable/icon" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="370dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/fleet_owner_con"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="201dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/live_transport" />
+
+        <TextView
+            android:id="@+id/fleetOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingLeft="170dp"
+            android:text="Fleet Owner"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/transporter_home_con"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="92dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="250dp"
+            android:paddingLeft="25dp"
+            app:srcCompat="@drawable/loads" />
+
+        <TextView
+            android:id="@+id/transporter"
+            android:layout_width="254dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Transporter"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="0dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/fleet_owner_con"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="220dp"
+            android:layout_height="96dp"
+            android:paddingLeft="10dp"
+            app:srcCompat="@drawable/attach_lorries_image" />
+
+        <TextView
+            android:id="@+id/driver"
+            android:layout_width="179dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Driver"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Click On Text"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

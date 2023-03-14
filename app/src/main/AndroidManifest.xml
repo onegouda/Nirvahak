@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.nirvahak">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- adding permission to take camera and write option to write External Storage -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nirvahak"
+        tools:targetApi="31">
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Otp_Auth"
+            android:exported="false" />
+        <activity
+            android:name=".Phone_Authentication"
+            android:exported="false" />
+        <activity
+            android:name=".Google_signIn_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".AttachLoad"
+            android:exported="false" />
+        <activity
+            android:name=".AttachTruck"
+            android:exported="false" />
+        <activity
+            android:name=".TransporterEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".FleetOwnerEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".DriverEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".tProfile"
+            android:exported="false" />
+        <activity
+            android:name=".tMyLoads"
+            android:exported="false" />
+        <activity
+            android:name=".tHistory"
+            android:exported="false" />
+        <activity
+            android:name=".TruckMarket"
+            android:exported="false" />
+        <activity
+            android:name=".fProfile"
+            android:exported="false" />
+        <activity
+            android:name=".MyTruck"
+            android:exported="false" />
+        <activity
+            android:name=".fHistory"
+            android:exported="false" />
+        <activity
+            android:name=".LoadMarket"
+            android:exported="false" />
+        <activity
+            android:name=".FleetOwner"
+            android:exported="false"/>
+        <activity
+            android:name=".Transporter"
+            android:exported="false"/>
+        <activity
+            android:name=".driverAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".driverProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Driver"
+            android:exported="false"/>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
